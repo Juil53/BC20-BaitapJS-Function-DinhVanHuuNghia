@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập Function</title>
+    <!-- BS 4.6 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="w-50">
+            <!-- BÀI TẬP 1 -->
+            <h2>BÀI TẬP 1</h2>
+            <h5>Điểm Chuẩn: 15</h5>
+            <form>
+                <div class="form-group">
+                    <label for="">Điểm môn 1</label>
+                    <input type="number" class="form-control" id="b1diem1">
+                </div>
+                <div class="form-group">
+                    <label for="">Điểm môn 2</label>
+                    <input type="number" class="form-control" id="b1diem2">
+                </div>
+                <div class="form-group">
+                    <label for="">Điểm môn 3</label>
+                    <input type="number" class="form-control" id="b1diem3">
+                </div>
+                <div class="form-group">
+                    <label for="">Khu vực</label>
+                    <select class="form-control" id="khuvuc">
+                        <option>Chọn Khu vực</option>
+                        <option value="1">Khu vực A</option>
+                        <option value="2">Khu vực B</option>
+                        <option value="3">Khu vực C</option>
+                        <option value="4">Khu vực X</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Đối tượng</label>
+                    <select class="form-control" id="doituong">
+                        <option>Chọn Đối tượng</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">0</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-danger" id="btnKetqua">KẾT QUẢ</button>
+                <p id="txtKetqua" class="text-success"></p>
+            </form>
+
+            <!-- BÀI TẬP 2 -->
+            <h2>BÀI TẬP 2</h2>
+            <form>
+                <div class="form-group">
+                    <label for="">TÊN</label>
+                    <input type="text" class="form-control" id="b2name">
+                </div>
+                <div class="form-group">
+                    <label for="">Số Kw</label>
+                    <input type="number" class="form-control" id="b2Kw">
+                </div>
+                <button type="button" class="btn btn-success" id="b2btnKetqua">KẾT QUẢ</button>
+                <p id="b2txtKetqua" class="text-success"></p>
+            </form>
+
+            <!-- BÀI TẬP 3 -->
+            <h2>BÀI TẬP 3</h2>
+            <form>
+                <div class="form-group">
+                    <label for="">HỌTÊN</label>
+                    <input type="text" class="form-control" id="b3Ten">
+                </div>
+                <div class="form-group">
+                    <label for="">TỔNG THU NHẬP NĂM/TRIỆU ĐỒNG</label>
+                    <input type="number" class="form-control" id="b3Thunhap">
+                </div>
+                <div class="form-group">
+                    <label for="">SỐ NGƯỜI PHỤ THUỘC</label>
+                    <input type="number" class="form-control" id="b3Phuthuoc">
+                </div>
+                <button type="button" class="btn btn-warning" id="b3btnKetqua">KẾT QUẢ</button>
+                <p id="b3txtKetqua" class="text-success"></p>
+            </form>
+
+            <!-- BÀI TẬP 4 -->
+            <h2>BÀI TẬP 4</h2>
+            <form>
+                <div class="form-group">
+                    <label for="">MÃ KHÁCH HÀNG</label>
+                    <input type="text" class="form-control" id="b4maKH">
+                </div>
+                <div class="form-group">
+                    <label for="">Chọn Khách Hàng</label>
+                    <select class="form-control" id="b4loaiKH">
+                        <option>Chọn loại khách hàng</option>
+                        <option value="1">Cá Nhân</option>
+                        <option value="2">Doanh Nghiệp</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" id="b4btnKH">Chọn</button>
+                <div class="form-group py-3">
+                    <label for="">SỐ KẾT NỐI</label>
+                    <input type="number" class="form-control" id="b4ketnoi" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="">SỐ KÊNH CAO CẤP</label>
+                    <input type="number" class="form-control disabled" id="b4kenh">
+                </div>
+                
+                <button type="button" class="btn btn-info" id="b4btnKetqua">KẾT QUẢ</button>
+                <p id="b4txtKetqua" class="text-success"></p>
+            </form>
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- BS 4.6 JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
